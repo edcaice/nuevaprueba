@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9B62D01B-12F1-4AE8-A91B-96A7A9EC8822}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Phonegap</RootNamespace>
+    <AssemblyName>Phonegap</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\index.css" />
+    <Content Include="css\owl.carousel.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\swipebox.css" />
+    <Content Include="Index.html" />
+    <Content Include="Login\Administrador\css\basictable.css" />
+    <Content Include="Login\Administrador\css\bootstrap.css" />
+    <Content Include="Login\Administrador\css\examples.css" />
+    <Content Include="Login\Administrador\css\font-awesome.css" />
+    <Content Include="Login\Administrador\css\font.css" />
+    <Content Include="Login\Administrador\css\ladda.min.css" />
+    <Content Include="Login\Administrador\css\lsb.css" />
+    <Content Include="Login\Administrador\css\monthly.css" />
+    <Content Include="Login\Administrador\css\morris.css" />
+    <Content Include="Login\Administrador\css\style.css" />
+    <Content Include="Login\Administrador\css\table-style.css" />
+    <Content Include="Login\Administrador\css\typo.css" />
+    <Content Include="Login\Administrador\fonts\fontawesome-webfont.svg" />
+    <Content Include="Login\Administrador\images\1.png" />
+    <Content Include="Login\Administrador\images\2.png" />
+    <Content Include="Login\Administrador\images\3.png" />
+    <Content Include="Login\Administrador\images\error-bg.jpg" />
+    <Content Include="Login\Administrador\images\error.png" />
+    <Content Include="Login\Administrador\images\g1.jpg" />
+    <Content Include="Login\Administrador\images\g2.jpg" />
+    <Content Include="Login\Administrador\images\g3.jpg" />
+    <Content Include="Login\Administrador\images\g4.jpg" />
+    <Content Include="Login\Administrador\images\g5.jpg" />
+    <Content Include="Login\Administrador\images\g6.jpg" />
+    <Content Include="Login\Administrador\images\logo.png" />
+    <Content Include="Login\Administrador\images\logo1.png" />
+    <Content Include="Login\Administrador\images\s1.jpg" />
+    <Content Include="Login\Administrador\Index.aspx" />
+    <Content Include="Login\Administrador\js\bootstrap.js" />
+    <Content Include="Login\Administrador\js\gmaps.js" />
+    <Content Include="Login\Administrador\js\graph.js" />
+    <Content Include="Login\Administrador\js\jquery-ui.min.js" />
+    <Content Include="Login\Administrador\js\jquery.basictable.min.js" />
+    <Content Include="Login\Administrador\js\jquery.cookie.js" />
+    <Content Include="Login\Administrador\js\jquery.countdown.min.js" />
+    <Content Include="Login\Administrador\js\jquery.geocomplete.js" />
+    <Content Include="Login\Administrador\js\jquery.min.js" />
+    <Content Include="Login\Administrador\js\jquery.vmap.js" />
+    <Content Include="Login\Administrador\js\jquery.vmap.sampledata.js" />
+    <Content Include="Login\Administrador\js\jquery.vmap.world.js" />
+    <Content Include="Login\Administrador\js\jquery1.9.1.min.js" />
+    <Content Include="Login\Administrador\js\jquery2.0.3.min.js" />
+    <Content Include="Login\Administrador\js\logger.js" />
+    <Content Include="Login\Administrador\js\lsb.js" />
+    <Content Include="Login\Administrador\js\modernizr.js" />
+    <Content Include="Login\Administrador\js\monthly.js" />
+    <Content Include="Login\Administrador\js\morris.js" />
+    <Content Include="Login\Administrador\js\raphael-min.js" />
+    <Content Include="Login\Administrador\js\screenfull.js" />
+    <Content Include="Login\Administrador\js\skycons.js" />
+    <Content Include="Login\Administrador\js\valida.2.1.6.min.js" />
+    <Content Include="Login\Administrador\js\validator.min.js" />
+    <Content Include="Login\css\bootstrap.css" />
+    <Content Include="Login\css\bootstrap.min.css" />
+    <Content Include="Login\css\stylish-portfolio.css" />
+    <Content Include="Login\font-awesome\css\font-awesome.css" />
+    <Content Include="Login\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Login\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Login\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Login\img\bg.jpg" />
+    <Content Include="Login\img\callout.jpg" />
+    <Content Include="Login\img\portfolio-1.jpg" />
+    <Content Include="Login\img\portfolio-2.jpg" />
+    <Content Include="Login\img\portfolio-3.jpg" />
+    <Content Include="Login\img\portfolio-4.jpg" />
+    <Content Include="Login\js\bootstrap.js" />
+    <Content Include="Login\js\bootstrap.min.js" />
+    <Content Include="Login\js\jquery.js" />
+    <Content Include="Login\Login.aspx" />
+    <Content Include="Login\Roles.aspx" />
+    <Content Include="Menu.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="images\1.png" />
+    <Content Include="images\banner1.jpg" />
+    <Content Include="images\banner12.jpg" />
+    <Content Include="images\banner2.jpg" />
+    <Content Include="images\icons.svg" />
+    <Content Include="images\img-sprite.png" />
+    <Content Include="images\n1.jpg" />
+    <Content Include="images\n2.jpg" />
+    <Content Include="images\pc.jpg" />
+    <Content Include="images\pc1.jpg" />
+    <Content Include="images\pc2.jpg" />
+    <Content Include="images\pc3.jpg" />
+    <Content Include="images\pc4.jpg" />
+    <Content Include="images\pc5.jpg" />
+    <Content Include="images\pc6.jpg" />
+    <Content Include="images\pc7.jpg" />
+    <Content Include="images\pc8.jpg" />
+    <Content Include="images\plus.png" />
+    <Content Include="images\t-1.jpg" />
+    <Content Include="images\t-2.jpg" />
+    <Content Include="images\t1.jpg" />
+    <Content Include="images\t2.jpg" />
+    <Content Include="images\t3.jpg" />
+    <Content Include="images\t4.jpg" />
+    <Content Include="images\to-top.png" />
+    <Content Include="js\bars.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\controls.js" />
+    <Content Include="js\easing.js" />
+    <Content Include="js\jquery-1.11.1.min.js" />
+    <Content Include="js\jquery.filterizr.js" />
+    <Content Include="js\jquery.progress.js" />
+    <Content Include="js\jquery.swipebox.min.js" />
+    <Content Include="js\move-top.js" />
+    <Content Include="js\owl.carousel.js" />
+    <Content Include="js\responsiveslides.min.js" />
+    <Content Include="Restaurantes\css\style.css" />
+    <Content Include="Restaurantes\js\index.js" />
+    <Content Include="Restaurantes\RestauranteLujo\Lujo.aspx" />
+    <Content Include="Restaurantes\RestauranteLujo\scss\style.scss" />
+    <Content Include="Login\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Login\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Login\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Login\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Login\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Login\font-awesome\less\animated.less" />
+    <Content Include="Login\font-awesome\less\bordered-pulled.less" />
+    <Content Include="Login\font-awesome\less\core.less" />
+    <Content Include="Login\font-awesome\less\fixed-width.less" />
+    <Content Include="Login\font-awesome\less\font-awesome.less" />
+    <Content Include="Login\font-awesome\less\icons.less" />
+    <Content Include="Login\font-awesome\less\larger.less" />
+    <Content Include="Login\font-awesome\less\list.less" />
+    <Content Include="Login\font-awesome\less\mixins.less" />
+    <Content Include="Login\font-awesome\less\path.less" />
+    <Content Include="Login\font-awesome\less\rotated-flipped.less" />
+    <Content Include="Login\font-awesome\less\stacked.less" />
+    <Content Include="Login\font-awesome\less\variables.less" />
+    <Content Include="Login\font-awesome\scss\font-awesome.scss" />
+    <Content Include="Login\font-awesome\scss\_animated.scss" />
+    <Content Include="Login\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="Login\font-awesome\scss\_core.scss" />
+    <Content Include="Login\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="Login\font-awesome\scss\_icons.scss" />
+    <Content Include="Login\font-awesome\scss\_larger.scss" />
+    <Content Include="Login\font-awesome\scss\_list.scss" />
+    <Content Include="Login\font-awesome\scss\_mixins.scss" />
+    <Content Include="Login\font-awesome\scss\_path.scss" />
+    <Content Include="Login\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="Login\font-awesome\scss\_stacked.scss" />
+    <Content Include="Login\font-awesome\scss\_variables.scss" />
+    <Content Include="Login\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Login\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Login\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Login\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Login\Administrador\fonts\fontawesome-webfont.eot" />
+    <Content Include="Login\Administrador\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Login\Administrador\fonts\fontawesome-webfont.woff" />
+    <Content Include="Login\Administrador\fonts\FontAwesome.otf" />
+    <Content Include="Login\Administrador\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Login\Administrador\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Restaurantes\Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Restaurantes\MRestaurante.aspx" />
+    <Content Include="Restaurantes\RestauranteLujo\css\style.css" />
+    <Content Include="Restaurantes\RestauranteLujo\js\index.js" />
+    <None Include="Restaurantes\RestauranteLujo\Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Restaurantes\RestauranteLujo\Scripts\jquery-1.7.1.js" />
+    <Content Include="Restaurantes\RestauranteLujo\Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Restaurantes\Scripts\jquery-1.7.1.js" />
+    <Content Include="Restaurantes\Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Tour Virtuales\css\style.css" />
+    <Content Include="Tour Virtuales\js\index.js" />
+    <Content Include="Tour Virtuales\Parques\fonts\fontawesome-webfont.eot" />
+    <Content Include="Tour Virtuales\Parques\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Tour Virtuales\Parques\fonts\fontawesome-webfont.woff" />
+    <Content Include="Tour Virtuales\Parques\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Tour Virtuales\Parques\fonts\FontAwesome.otf" />
+    <None Include="Tour Virtuales\Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Tour Virtuales\MTourVirtual.aspx" />
+    <Content Include="Tour Virtuales\Parques\blog.html" />
+    <Content Include="Tour Virtuales\Parques\contact.html" />
+    <Content Include="Tour Virtuales\Parques\css\bootstrap.css" />
+    <Content Include="Tour Virtuales\Parques\css\DSlider.css" />
+    <Content Include="Tour Virtuales\Parques\css\easy-responsive-tabs.css" />
+    <Content Include="Tour Virtuales\Parques\css\font-awesome.min.css" />
+    <Content Include="Tour Virtuales\Parques\css\jquery-ui.css" />
+    <Content Include="Tour Virtuales\Parques\css\smoothbox.css" />
+    <Content Include="Tour Virtuales\Parques\css\style.css" />
+    <Content Include="Tour Virtuales\Parques\fonts\fontawesome-webfont.svg" />
+    <Content Include="Tour Virtuales\Parques\icons.html" />
+    <Content Include="Tour Virtuales\Parques\images\1.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\1.png" />
+    <Content Include="Tour Virtuales\Parques\images\10.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\11.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\12.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\13.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\14.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\15.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\16.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\17.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\18.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\19.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\2.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\2.png" />
+    <Content Include="Tour Virtuales\Parques\images\20.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\21.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\22.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\23.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\24.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\3.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\3.png" />
+    <Content Include="Tour Virtuales\Parques\images\4.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\5.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\6.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\7.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\8.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\9.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\banner.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\banner1.jpg" />
+    <Content Include="Tour Virtuales\Parques\images\hislider-arrow.png" />
+    <Content Include="Tour Virtuales\Parques\images\i1.png" />
+    <Content Include="Tour Virtuales\Parques\images\left.png" />
+    <Content Include="Tour Virtuales\Parques\images\right.png" />
+    <Content Include="Tour Virtuales\Parques\Index.aspx" />
+    <Content Include="Tour Virtuales\Parques\index.html" />
+    <Content Include="Tour Virtuales\Parques\js\bootstrap.min.js" />
+    <Content Include="Tour Virtuales\Parques\js\classie.js" />
+    <Content Include="Tour Virtuales\Parques\js\counterup.min.js" />
+    <Content Include="Tour Virtuales\Parques\js\DSlider.js" />
+    <Content Include="Tour Virtuales\Parques\js\easyResponsiveTabs.js" />
+    <Content Include="Tour Virtuales\Parques\js\jquery-2.2.3.min.js" />
+    <Content Include="Tour Virtuales\Parques\js\jquery-ui.js" />
+    <Content Include="Tour Virtuales\Parques\js\jquery.flexisel.js" />
+    <Content Include="Tour Virtuales\Parques\js\slide-from-top.js" />
+    <Content Include="Tour Virtuales\Parques\js\smoothbox.jquery2.js" />
+    <Content Include="Tour Virtuales\Parques\js\waypoints.min.js" />
+    <Content Include="Tour Virtuales\Parques\Main.aspx" />
+    <Content Include="Tour Virtuales\Parques\main.html" />
+    <Content Include="Tour Virtuales\Parques\menu.aspx" />
+    <Content Include="Tour Virtuales\Parques\menu.html" />
+    <Content Include="Tour Virtuales\Parques\short-codes.html" />
+    <Content Include="Tour Virtuales\Parques\sign-in.html" />
+    <Content Include="Tour Virtuales\Parques\single.html" />
+    <Content Include="Tour Virtuales\Parques\team.html" />
+    <Content Include="Tour Virtuales\Parques\w3layouts-License.txt" />
+    <Content Include="Tour Virtuales\Scripts\jquery-1.7.1.js" />
+    <Content Include="Tour Virtuales\Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Tourvirtual.aspx" />
+    <Content Include="Tourvirtual.html" />
+    <Content Include="Tourvirtualdata\dos_11\0\0\0_0.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\0\0\0_1.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\0\0\1_0.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\0\0\1_1.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\1\0\0_0.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\1\0\0_1.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\1\0\1_0.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\1\0\1_1.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\2\0\0_0.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\2\0\0_1.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\2\0\1_0.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\2\0\1_1.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\3\0\0_0.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\3\0\0_1.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\3\0\1_0.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\3\0\1_1.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\4\0\0_0.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\4\0\0_1.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\4\0\1_0.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\4\0\1_1.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\5\0\0_0.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\5\0\0_1.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\5\0\1_0.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\5\0\1_1.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\html5\0.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\html5\1.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\html5\2.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\html5\3.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\html5\4.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\html5\5.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\mobile\0.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\mobile\1.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\mobile\2.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\mobile\3.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\mobile\4.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\mobile\5.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\preview.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\tablet\0.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\tablet\1.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\tablet\2.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\tablet\3.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\tablet\4.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\tablet\5.jpg" />
+    <Content Include="Tourvirtualdata\dos_11\thumbnail.jpg" />
+    <Content Include="Tourvirtualdata\graphics\Cardboard1.png" />
+    <Content Include="Tourvirtualdata\graphics\Cardboard2.png" />
+    <Content Include="Tourvirtualdata\graphics\ColorCrossVR.png" />
+    <Content Include="Tourvirtualdata\graphics\cursors_drag.png" />
+    <Content Include="Tourvirtualdata\graphics\cursors_drag_html5.cur" />
+    <Content Include="Tourvirtualdata\graphics\cursors_move.png" />
+    <Content Include="Tourvirtualdata\graphics\cursors_move_html5.cur" />
+    <Content Include="Tourvirtualdata\graphics\Custom.png" />
+    <Content Include="Tourvirtualdata\graphics\GearVR.png" />
+    <Content Include="Tourvirtualdata\graphics\HOMiDO.png" />
+    <Content Include="Tourvirtualdata\graphics\NoDistortion.png" />
+    <Content Include="Tourvirtualdata\graphics\rotate_device.png" />
+    <Content Include="Tourvirtualdata\graphics\textfield.swf" />
+    <Content Include="Tourvirtualdata\graphics\VRONE.png" />
+    <Content Include="Tourvirtualdata\graphics\webvr.js" />
+    <Content Include="Tourvirtualdata\graphics\webvr_cursor.png" />
+    <Content Include="Tourvirtualdata\graphics\webvr_settings.png" />
+    <Content Include="Tourvirtualdata\graphics\webvr_toggle.png" />
+    <Content Include="Tourvirtualdata\graphics\_360-degree-virtual-tour.png" />
+    <Content Include="Tourvirtualdata\lib\jquery-1.11.1.min.js" />
+    <Content Include="Tourvirtualdata\lib\jquery-2.1.1.min.js" />
+    <Content Include="Tourvirtualdata\spots\hotspot_neutral_user_defaultmap0.png" />
+    <Content Include="Tourvirtualdata\spots\hotspot_neutral_user_defaultpoint0.png" />
+    <Content Include="Tourvirtualdata\spots\hotspot_plan_user_defaultpoint0.png" />
+    <Content Include="Tourvirtualdata\thumbnail.jpg" />
+    <Content Include="Tourvirtualdata\Tourvirtual.js" />
+    <Content Include="Tourvirtualdata\Tourvirtual.swf" />
+    <Content Include="Tourvirtualdata\Tourvirtual.xml" />
+    <Content Include="Tourvirtualdata\Tourvirtual_core.xml" />
+    <Content Include="Tourvirtualdata\Tourvirtual_core_vr.xml" />
+    <Content Include="Tourvirtualdata\Tourvirtual_messages_en.xml" />
+    <Content Include="Tourvirtualdata\Tourvirtual_skin.xml" />
+    <Content Include="Tourvirtualdata\Tourvirtual_skin_vr.xml" />
+    <Content Include="Tourvirtualdata\Tourvirtual_vr.xml" />
+    <Content Include="Tourvirtualdata\uno_9\0\0\0_0.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\0\0\0_1.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\0\0\1_0.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\0\0\1_1.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\1\0\0_0.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\1\0\0_1.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\1\0\1_0.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\1\0\1_1.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\2\0\0_0.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\2\0\0_1.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\2\0\1_0.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\2\0\1_1.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\3\0\0_0.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\3\0\0_1.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\3\0\1_0.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\3\0\1_1.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\4\0\0_0.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\4\0\0_1.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\4\0\1_0.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\4\0\1_1.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\5\0\0_0.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\5\0\0_1.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\5\0\1_0.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\5\0\1_1.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\html5\0.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\html5\1.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\html5\2.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\html5\3.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\html5\4.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\html5\5.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\mobile\0.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\mobile\1.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\mobile\2.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\mobile\3.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\mobile\4.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\mobile\5.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\preview.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\tablet\0.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\tablet\1.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\tablet\2.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\tablet\3.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\tablet\4.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\tablet\5.jpg" />
+    <Content Include="Tourvirtualdata\uno_9\thumbnail.jpg" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Login\Administrador\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Administrador\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Autentificacion.cs" />
+    <Compile Include="Login\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Roles.aspx.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Roles.aspx.designer.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Restaurantes\MRestaurante.aspx.cs">
+      <DependentUpon>MRestaurante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Restaurantes\MRestaurante.aspx.designer.cs">
+      <DependentUpon>MRestaurante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurantes\RestauranteLujo\Lujo.aspx.cs">
+      <DependentUpon>Lujo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Restaurantes\RestauranteLujo\Lujo.aspx.designer.cs">
+      <DependentUpon>Lujo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tour Virtuales\MTourVirtual.aspx.cs">
+      <DependentUpon>MTourVirtual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tour Virtuales\MTourVirtual.aspx.designer.cs">
+      <DependentUpon>MTourVirtual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tour Virtuales\Parques\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tour Virtuales\Parques\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tour Virtuales\Parques\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tour Virtuales\Parques\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tour Virtuales\Parques\menu.aspx.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tour Virtuales\Parques\menu.aspx.designer.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tourvirtual.aspx.cs">
+      <DependentUpon>Tourvirtual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tourvirtual.aspx.designer.cs">
+      <DependentUpon>Tourvirtual.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Restaurantes\scss\style.scss" />
+    <Content Include="Tour Virtuales\scss\style.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>9661</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:9661/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

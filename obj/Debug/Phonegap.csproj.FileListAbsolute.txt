@@ -1,0 +1,6 @@
+c:\users\davidpc\documents\visual studio 2013\Projects\Phonegap\Phonegap\bin\Phonegap.dll.config
+c:\users\davidpc\documents\visual studio 2013\Projects\Phonegap\Phonegap\bin\Phonegap.dll
+c:\users\davidpc\documents\visual studio 2013\Projects\Phonegap\Phonegap\bin\Phonegap.pdb
+c:\users\davidpc\documents\visual studio 2013\Projects\Phonegap\Phonegap\obj\Debug\Phonegap.csprojResolveAssemblyReference.cache
+c:\users\davidpc\documents\visual studio 2013\Projects\Phonegap\Phonegap\obj\Debug\Phonegap.dll
+c:\users\davidpc\documents\visual studio 2013\Projects\Phonegap\Phonegap\obj\Debug\Phonegap.pdb
